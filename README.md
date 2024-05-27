@@ -1,74 +1,85 @@
-# Régénération des Structures Naturelles
+# Natural Structure reloading
 
-Grâce à ce datapack, toutes les structures naturelles de Minecraft (Java edition) se régénèrent automatiquement, une seule fois pour chaque joueur.
+[*(Version française)*](https://github.com/FloDev-yt/Structure_reloading/tree/MC-1.20.2_FR)
 
- Voici comment cela fonctionne en détail :
+Thanks to this datapack, all natural structures in Minecraft (Java Edition) automatically regenerate once for each player.
+| looted Village | Restored Village |
+| --- | --- |
+| ![Looted Village](https://github.com/FloDev-yt/Structure_reloading/blob/assets/village_pillé.png) | ![Restored Village](https://github.com/FloDev-yt/Structure_reloading/blob/assets/village_restaure.png) |
 
-1. **Détection et Scan des Chunks :**
-   - Le datapack commence par scanner votre monde, remplaçant la bedrock par des blocs barrière à la couche correspondante dans l'Overworld ou le Nether. Cela permet de marquer chaque chunk une seule fois, évitant les rescans inutiles.
-   - Chaque chunk est analysé pour détecter la présence de structures naturelles telles que des villages, des temples, des donjons, etc.
+Here’s how it works in detail:
 
-2. **Identification des Structures :**
-   - Pour identifier si une structure existe dans un chunk, le datapack commence par localiser des bloques unnique aux structures. 
-   - À partir de ces bloques, le datapack délimite une zone initiale de 16x16x16 blocs centrée sur le chunk contenant ceci.
+1. **Chunk Detection and Scanning:**
+   - The datapack starts by scanning your world, replacing bedrock with barrier blocks at the corresponding layer in the Overworld or Nether. This allows each chunk to be marked once, preventing unnecessary rescanning.
+   - Each chunk is analyzed to detect the presence of natural structures such as villages, temples, dungeons, etc.
 
-3. **Expansion de la Zone :**
-   - Cette zone initiale s'étend en cubes de 16x16x16 blocs supplémentaires pour englober toute la structure naturelle.
-   - Une fois la structure complètement identifiée, le datapack copie tous les blocs et entités de cette structure dans une dimension de sauvegarde dédiée. Par exemple, les blocs de l'Overworld seront copiés dans une dimension nommée "overworld_copy".
+2. **Structure Identification:**
+   - To identify if a structure exists in a chunk, the datapack starts by locating blocks unique to structures.
+   - From these blocks, the datapack delineates an initial 16x16x16 block area centered on the chunk containing them.
 
-4. **Régénération des Structures :**
-   - À chaque fois qu'un nouveau joueur s'approche d'une structure naturelle pour la première fois, le datapack vérifie si cette structure a déjà été régénérée pour ce joueur.
-   - Si ce n'est pas le cas, le datapack restaure la structure à partir de la copie de sauvegarde, permettant au joueur de découvrir la structure comme si elle était neuve.
+Example for a chunk with two cubes made visible:
 
-5. **Délai de Régénération :**
-   - Après qu'un joueur a exploré une structure régénérée, un délai de 5 minutes est imposé avant qu'un autre joueur puisse déclencher une nouvelle régénération de la même structure.
-   - Ce délai est réglable avec la commande suivante :
+<img src="https://github.com/FloDev-yt/Structure_reloading/blob/assets/chunck.png" width="389" height="496"/>
+
+3. **Zone Expansion:**
+   - This initial area expands into additional 16x16x16 block cubes to encompass the entire natural structure.
+
+     Example of a village with all cubes made visible:
+
+   ![Village Structure Representation](https://github.com/FloDev-yt/Structure_reloading/blob/assets/village_all_portion.png)
+
+   - Once the structure is fully identified, the datapack copies all blocks and entities of this structure into a dedicated backup dimension. For example, blocks from the Overworld will be copied into a dimension named "overworld_copy."
+
+4. **Structure Regeneration:**
+   - Each time a new player approaches a natural structure for the first time, the datapack checks if that structure has already regenerated for the player.
+   - If not, the datapack restores the structure from the backup copy, allowing the player to discover the structure as if it were new.
+
+5. **Regeneration Delay:**
+   - After a player has explored a regenerated structure, a 5-minute delay is imposed before another player can trigger a new regeneration of the same structure.
+   - This delay can be adjusted with the following command:
      ```
      /scoreboard players set sr_time_before_reload_structure gamerule 300
      ```
-     où 300 secondes correspondent à 5 minutes.
+     where 300 seconds equals 5 minutes.
 
-6. **Précautions :**
-   - Il est important de ne pas construire trop près des structures naturelles car tous les blocs environnants seront réinitialisés lors de la régénération.
-   - Pour éviter toute perte de constructions personnelles, assurez-vous de maintenir une certaine distance par rapport aux structures naturelles.
+6. **Precautions:**
+   - It is important not to build too close to natural structures as all surrounding blocks will be reset during regeneration.
+   - To avoid losing personal constructions, ensure to maintain a certain distance from natural structures.
 
-En somme, ce datapack enrichit l'expérience multijoueur en permettant à chaque joueur de découvrir et d'explorer les structures naturelles comme s'ils étaient les premiers à les trouver, tout en permetant au joueurs de ce développer dans les zonnes vierge.
+In summary, this datapack enhances the multiplayer experience by allowing each player to discover and explore natural structures as if they were the first to find them, while enabling players to develop in untouched areas.
 
- ### Compatibilité avec d'autres Mods/Datapacks
-  - Ce datapack est conçu pour être compatible avec d'autres mods ou datapacks qui modifient les structures des trois mondes de base. Cependant, si un mod ajoute de nouveaux blocs en dehors des structures naturelles, cela peut poser des problèmes lors de la régénération des structures.
+### Compatibility with Other Mods/Datapacks
+  - This datapack is designed to be compatible with other mods or datapacks that modify the structures of the three main worlds. However, if a mod adds new blocks outside of natural structures, it may cause problems during the regeneration of structures.
 
-## Téléchargement
+## Download
 
- Téléchargez le datapack à partir du lien suivant : 
- 
- - [**Pour Minecraft 1.20.2 et plus (FR)**](https://github.com/FloDev-yt/Structure_reloading//releases/tag/MC-1.20.2_FR).
+Download the datapack from the following link: 
 
+- [**For Minecraft 1.20.2 and later (EN)**](https://github.com/FloDev-yt/Structure_reloading//releases/tag/MC-1.20.2_EN).
 
 ### Installation
 
-[*Tutoriels/Installer un pack de données*](https://fr.minecraft.wiki/w/Tutoriels/Installer_un_pack_de_données)
+[*Tutorials/Installing a Data Pack*](https://minecraft.wiki/w/Tutorials/Installing_a_data_pack)
 
-**Configuration pour les serveurs :**
-   - Si vous installez ce datapack sur un serveur, assurez-vous d'activer les commandes block dans les options du serveur. Pour ce faire, ouvrez le fichier `server.properties` et modifiez la ligne suivante :
-
+**Server Configuration:**
+   - If you are installing this datapack on a server, ensure to enable command blocks in the server options. To do this, open the `server.properties` file and modify the following line:
      ```properties
      enable-command-block=true
      ```
 
-**Installation avant la génération du monde :**
-   - Il est recommandé d'installer ce datapack avant la génération du monde pour que celui-ci puisse fonctionner.
+**Installation before World Generation:**
+   - It is recommended to install this datapack before world generation to ensure it functions properly.
 
-**Installation dans un monde déjà généré :**
-   - Si vous devez installer le datapack dans un monde déjà généré, téléchargez ce fichier zip : [*dimensions.zip*](https://fr.minecraft.wiki/w/Tutoriels/Installer_un_pack_de_données).
-   - Extrayez l'archive à la racine de votre sauvegarde Minecraft. Ceci ajoutera les trois dimensions vierges nécessaires au fonctionnement du datapack.
+**Installation in an Already Generated World:**
+   - If you need to install the datapack in an already generated world, download this zip file: [*dimensions.zip*](https://github.com/FloDev-yt/Structure_reloading/releases/download/MC-1.20.2_EN/dimensions.zip).
+   - Extract the archive to the root of your Minecraft save. This will add the three empty dimensions needed for the datapack to function.
 
+## A Word About Me
 
-## Un mot sur moi
+Passionate about Minecraft since the very beginning, I have always felt that something was missing to enhance the multiplayer aspect. I try to add this through my developments and datapacks.
 
-Passionné par Minecraft depuis le tout début, j'ai toujours pensé qu'il manquait quelque chose pour améliorer la partie multijoueur. J'essaie de l'ajouter à travers mes développements et datapacks.
+**Useful Links:**
+- [My Tipeee](https://fr.tipeee.com/flo-dev)
+- [My Other Developments](https://github.com/FloDev-yt?tab=repositories)
 
-**Liens utiles :**
-- [Mon Tipeee](https://fr.tipeee.com/flo-dev)
-- [Mes autres développements](https://github.com/FloDev-yt?tab=repositories)
-
-Vous pouvez aussi m'écrire à cette adresse mail : [flo.dev.yt@gmail.com](mailto:flo.dev.yt@gmail.com) pour me faire part d'un problème ou d'une remarque quelconque.
+You can also write to me at this email address: [flo.dev.yt@gmail.com](flo.dev.yt@gmail.com) to report a problem or provide any feedback.
