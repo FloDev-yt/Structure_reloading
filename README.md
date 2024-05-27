@@ -19,7 +19,8 @@ Grâce à ce datapack, toutes les structures naturelles de Minecraft (Java editi
    - À partir de ces bloques, le datapack délimite une zone initiale de 16x16x16 blocs centrée sur le chunk contenant ceci.
 
 Exemple pour un chunck avec deux cubes rendu visible :
-<img src="https://github.com/FloDev-yt/Structure_reloading/blob/assets/chunck.png" width="300" height="600"/>
+
+<img src="https://github.com/FloDev-yt/Structure_reloading/blob/assets/chunck.png" width="389" height="496"/>
 
 
 3. **Expansion de la Zone :**
