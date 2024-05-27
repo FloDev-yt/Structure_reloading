@@ -1,0 +1,1 @@
+scoreboard players add #nbInstance-2 world_scanner 1

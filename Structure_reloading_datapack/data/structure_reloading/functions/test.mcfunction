@@ -1,0 +1,2 @@
+execute at @a[limit=1] as @e[type=minecraft:shulker,tag=!sr_shulker,limit=1,sort=nearest] at @s run function structure_reloading:structures_finder/the_end/add_tag
+# execute at @a[limit=1] as @e[type=marker,limit=1,sort=nearest] at @s run function structure_reloading:reload/reload {"world":"overworld"}

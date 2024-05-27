@@ -1,0 +1,1 @@
+$fill ~ ~ ~ ~15 ~15 ~15 minecraft:command_block{UpdateLastExecution:0,auto:1,Command:"function structure_reloading:structures_finder/chest_seed/find_chest_cb {\"world\":\"$(world)\"}"} replace minecraft:chest

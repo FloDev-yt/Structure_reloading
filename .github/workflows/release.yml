@@ -1,0 +1,35 @@
+name: make Datapack
+on:
+ push:
+   tags:
+     - "MC*"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: module Zip
+        uses: montudor/action-zip@v1
+
+      - name: Create zip
+        run: zip -qq -r Structure_reloading_datapack.zip *
+        working-directory: Structure_reloading_datapack
+
+      - name: Upload zip to release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          tag: MC-1.20.2_FR
+          release_name: Minecraft 1.20.2 et plus (FR)
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: Structure_reloading_datapack/Structure_reloading_datapack.zip
+          asset_name: Structure_reloading_${{ github.ref_name }}.zip
+          overwrite: true
+          body: |
+            testé pour Minecraft : 1.20.2, 1.20.4, 1.20.6
+            La dernière version du datapack pour cette version de Minecraft est : Structure_reloading_${{ github.ref_name }}.zip
+             ||
+            \\/

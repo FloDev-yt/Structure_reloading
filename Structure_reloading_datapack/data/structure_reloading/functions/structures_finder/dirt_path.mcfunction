@@ -1,0 +1,2 @@
+$execute store success score #sr_haveDirt_path g_check run clone ~ ~ ~ ~15 ~15 ~15 to structure_reloading:$(world)_copy ~ ~-1 ~ filtered minecraft:dirt_path force
+execute if score #sr_haveDirt_path g_check matches 1 run tag @s add sr_haveDirt_path

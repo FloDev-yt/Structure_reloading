@@ -1,0 +1,1 @@
+$execute positioned ~-8 ~-8 ~-8 as @e[type=!#structure_reloading:exclude_$(world),tag=sr_entityReload,dx=31,dy=31,dz=31] run data merge entity @s {DeathTime:20,Health:0,Pos:[8,-164,8]}

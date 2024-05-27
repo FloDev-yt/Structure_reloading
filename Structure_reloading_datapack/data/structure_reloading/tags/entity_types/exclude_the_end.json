@@ -1,0 +1,10 @@
+{
+    "values":[
+        "minecraft:player",
+        "minecraft:item",
+        "minecraft:area_effect_cloud",
+        "minecraft:marker",
+        "minecraft:shulker_bullet",
+        "minecraft:enderman"
+    ]
+}
