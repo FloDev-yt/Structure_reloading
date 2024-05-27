@@ -16,7 +16,7 @@ jobs:
         uses: montudor/action-zip@v1
 
       - name: Create zip
-        run: zip -qq -r Structure_reloading_datapack.zip *
+        run: zip -qq -r Structure_reloading_datapack.zip data pack.mcmeta
         working-directory: Structure_reloading_datapack
 
       - name: Upload zip to release
