@@ -1,5 +1,7 @@
 # Régénération des Structures Naturelles
 
+[*(English version)*](https://github.com/FloDev-yt/Structure_reloading)
+
 Grâce à ce datapack, toutes les structures naturelles de Minecraft (Java edition) se régénèrent automatiquement, une seule fois pour chaque joueur.
 | Village pillé | Village restaurer |
 | --- | --- |
@@ -17,8 +19,8 @@ Grâce à ce datapack, toutes les structures naturelles de Minecraft (Java editi
    - À partir de ces bloques, le datapack délimite une zone initiale de 16x16x16 blocs centrée sur le chunk contenant ceci.
 
 Exemple pour un chunck avec deux cubes rendu visible :
+<img src="https://github.com/FloDev-yt/Structure_reloading/blob/assets/chunck.png" width="300" height="600"/>
 
-   ![représentation chunck](https://github.com/FloDev-yt/Structure_reloading/blob/assets/chunck.png)
 
 3. **Expansion de la Zone :**
    - Cette zone initiale s'étend en cubes de 16x16x16 blocs supplémentaires pour englober toute la structure naturelle.
@@ -72,7 +74,7 @@ En somme, ce datapack enrichit l'expérience multijoueur en permettant à chaque
    - Il est recommandé d'installer ce datapack avant la génération du monde pour que celui-ci puisse fonctionner.
 
 **Installation dans un monde déjà généré :**
-   - Si vous devez installer le datapack dans un monde déjà généré, téléchargez ce fichier zip : [*dimensions.zip*](https://fr.minecraft.wiki/w/Tutoriels/Installer_un_pack_de_données).
+   - Si vous devez installer le datapack dans un monde déjà généré, téléchargez ce fichier zip : [*dimensions.zip*](https://github.com/FloDev-yt/Structure_reloading/releases/download/MC-1.20.2_FR/dimensions.zip).
    - Extrayez l'archive à la racine de votre sauvegarde Minecraft. Ceci ajoutera les trois dimensions vierges nécessaires au fonctionnement du datapack.
 
 
