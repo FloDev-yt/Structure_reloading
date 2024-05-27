@@ -1,2 +1,0 @@
-tag @s add sr_shulker
-execute positioned ~-16 ~-16 ~-16 unless entity @e[type=marker,scores={sr_idZone=0..},dx=15,dy=15,dz=15,limit=1] at @s summon marker run function structure_reloading:structures_finder/chunk_align {"world":"the_end"}

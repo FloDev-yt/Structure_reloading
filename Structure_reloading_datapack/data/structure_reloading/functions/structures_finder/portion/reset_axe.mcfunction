@@ -1,1 +1,0 @@
-execute as @e[type=marker,scores={sr_idZone=1..},name=sr_structure_master,tag=sr_resetAxe] at @s run function structure_reloading:structures_finder/portion/axe_new_count with entity @s data

@@ -1,2 +1,0 @@
-execute if entity @s[advancements={structure_reloading:flag_first=false}] run function structure_reloading:messages/first
-$execute at @e[type=marker,scores={sr_idZone=$(idZone)},name=sr_structure_master,limit=1] run function structure_reloading:reload/check {"idZone":$(idZone),"idPlayer":$(idPlayer)}
