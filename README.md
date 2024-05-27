@@ -1,6 +1,10 @@
 # Régénération des Structures Naturelles
 
 Grâce à ce datapack, toutes les structures naturelles de Minecraft (Java edition) se régénèrent automatiquement, une seule fois pour chaque joueur.
+| Village pillé | Village restaurer |
+| --- | --- |
+| ![Village pillé](https://github.com/FloDev-yt/Structure_reloading/blob/assets/village_pillé.png) | ![Village restaurer](https://github.com/FloDev-yt/Structure_reloading/blob/assets/village_restaure.png) |
+
 
  Voici comment cela fonctionne en détail :
 
@@ -12,8 +16,17 @@ Grâce à ce datapack, toutes les structures naturelles de Minecraft (Java editi
    - Pour identifier si une structure existe dans un chunk, le datapack commence par localiser des bloques unnique aux structures. 
    - À partir de ces bloques, le datapack délimite une zone initiale de 16x16x16 blocs centrée sur le chunk contenant ceci.
 
+Exemple pour un chunck avec deux cubes rendu visible :
+
+   ![représentation chunck](https://github.com/FloDev-yt/Structure_reloading/blob/assets/chunck.png)
+
 3. **Expansion de la Zone :**
    - Cette zone initiale s'étend en cubes de 16x16x16 blocs supplémentaires pour englober toute la structure naturelle.
+
+      Exemple un village avec tous les cubes rendu visible :
+
+   ![représentation structure Village](https://github.com/FloDev-yt/Structure_reloading/blob/assets/village_all_portion.png)
+
    - Une fois la structure complètement identifiée, le datapack copie tous les blocs et entités de cette structure dans une dimension de sauvegarde dédiée. Par exemple, les blocs de l'Overworld seront copiés dans une dimension nommée "overworld_copy".
 
 4. **Régénération des Structures :**
