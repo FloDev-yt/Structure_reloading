@@ -1,4 +1,5 @@
 tag @s add sr_entityReload
+scoreboard players set #ifEntity g_check 1
 execute if entity @s[type=chest_minecart] run function structure_reloading:structures_finder/chest_seed/chest_minecart
 $execute in structure_reloading:$(world)_copy run forceload add ~ ~ ~ ~
 $clone ~ ~ ~ ~ ~ ~ to structure_reloading:$(world)_copy ~ ~ ~ replace

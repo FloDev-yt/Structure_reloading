@@ -37,5 +37,5 @@ tag @a[gamemode=creative] add adminMsg
 # tag @a[tag=admin] add adminMsg
 # if not admin 
 execute unless entity @a[tag=adminMsg] run tag @a add adminMsg
-tellraw @a[tag=adminMsg] ["",{"text":"[","color":"aqua"},{"text":"Structure reloading","bold":true,"color":"dark_aqua","clickEvent":{"action":"open_url","value":"https://github.com/FloDev-yt/Structure_reloading"},"hoverEvent":{"action":"show_text","contents":["Lien vers le site du Datapack"]}},{"text":"]","color":"aqua"},{"text":" reloaded","color":"dark_green"}]
+tellraw @a[tag=adminMsg] ["",{"text":"[","color":"aqua"},{"text":"Structure reloading","bold":true,"color":"dark_aqua","clickEvent":{"action":"open_url","value":"https://github.com/FloDev-yt/Structure_reloading"},"hoverEvent":{"action":"show_text","contents":["Datapack web site"]}},{"text":"]","color":"aqua"},{"text":" reloaded","color":"dark_green"}]
 tag @a[tag=adminMsg] remove adminMsg
